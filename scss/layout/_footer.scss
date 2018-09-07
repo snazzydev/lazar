@@ -1,0 +1,85 @@
+// -----------
+// FOOTER
+//------------
+
+.footer {
+  &:focus {
+    outline: none;
+  }
+  position: relative;
+  // background-color: $color-dark-2;
+  background-image: linear-gradient(
+      60deg,
+      rgba($color-grey, 1),
+      rgba($color-dark, 0.8)
+    ),
+    url(../img/hero.jpg);
+  background-position: bottom;
+  background-attachment: fixed;
+  text-align: center;
+  height: 100vh;
+
+  &__heading {
+    color: $color-white;
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  &__img {
+    width: 8rem;
+    margin: 0 auto;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__icon {
+    font-size: 4rem;
+    margin: 0 1rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 2rem;
+    transition: all 0.2s;
+  }
+
+  &__link:hover {
+    color: $color-primary-dark;
+  }
+
+  &__border {
+    border-bottom: 3px solid $color-white;
+
+    @include respond(phone) {
+      border: none;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 6rem;
+  }
+
+  &__copy {
+    color: $color-white;
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__icon {
+    display: inline-block;
+  }
+
+  &__copyright {
+    font-size: 2rem;
+  }
+}

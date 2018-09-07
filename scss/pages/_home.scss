@@ -1,0 +1,38 @@
+//-------------------
+// ABOUT SECTION
+// ------------------
+
+.section-about {
+  &:focus {
+    outline: none;
+  }
+  position: relative;
+  background-color: $color-primary-light;
+  height: 100vh;
+}
+
+//-------------------
+// SERVICES SECTION
+// ------------------
+
+.section-services {
+  &:focus {
+    outline: none;
+  }
+  position: relative;
+  background-color: $color-dark-blue;
+  height: 100vh;
+}
+
+//-------------------
+// WORK SECTION
+// ------------------
+
+.section-work {
+  &:focus {
+    outline: none;
+  }
+  position: relative;
+  background-color: $color-purple-light;
+  height: 100vh;
+}

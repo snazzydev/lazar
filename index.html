@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta property="og:image" content="img/thumbnail.jpg" /> -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ninoslav.snylabs.com/" />
+  <meta property="og:title" content="Lazar | Lazarevic" />
+  <meta property="og:description" content="Hello, my name is Lazar, and I'm a professional photo retoucher and Photoshop expert." />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Lazar | Lazarevic</title>
+  <!-- Script -->
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+
+  </script>
+</head>
+
+<body id="home">
+
+  <div class="preloader preloader__complete">
+  </div>
+
+
+
+
+
+  <div class="overlay">
+    &nbsp;
+  </div>
+
+
+  <!-- NAVIGATION -->
+  <div class="menu-btn">
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+  </div>
+
+  <div class="menu">
+    <ul class="menu-nav">
+      <li class="nav-item">
+        <a href="#home" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#section-about" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#services" class="nav-link">Services</a>
+      </li>
+      <li class="nav-item">
+        <a href="#section-work" class="nav-link">Work</a>
+      </li>
+      <li class="nav-item">
+        <a href="#footer" class="nav-link">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- HEADER -->
+
+
+  <header class="header" id="header">
+
+
+    <h1 class="primary-heading">
+      <span class="primary-heading-top">Hello, I'm <br>
+        Lazar.
+      </span>
+      <span class="primary-heading-bottom">I'm a professional photo retoucher
+        and Photoshop expert.</span>
+    </h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="down-scroll">
+      <a href="#section-about" class="down-scroll__text">Scroll Down</a>
+      <div class="scroll-bg">&nbsp;</div>
+      <a href="#section-about" class="scroll-btn down-scroll__link"><i class="fas fa-chevron-down"></i></a>
+    </div>
+
+  </header>
+
+  <main>
+    <!-- SECTION ABOUT-->
+
+    <section class="section-about" id="section-about">
+      <div class="down-scroll">
+        <a href="#services" class="down-scroll__text">Scroll Down</a>
+        <a href="#services" class="scroll-btn down-scroll__link"><i class="fas fa-chevron-down"></i></a>
+      </div>
+
+    </section>
+
+    <!-- SERVICES SECTION -->
+
+    <section class="section-services" id="services">
+      <div class="down-scroll">
+        <a href="#section-work" class="down-scroll__text">Scroll Down</a>
+        <a href="#section-work" class="scroll-btn down-scroll__link"><i class="fas fa-chevron-down"></i></a>
+      </div>
+
+    </section>
+
+    <!-- SECTION WORK -->
+
+    <section class="section-work" id="section-work">
+      <div class="down-scroll">
+        <a href="#footer" class="down-scroll__text">Scroll Down</a>
+        <a href="#footer" class="scroll-btn down-scroll__link"><i class="fas fa-chevron-down"></i></a>
+      </div>
+
+    </section>
+
+
+
+
+  </main>
+
+
+
+
+  <footer class="footer" id="footer">
+
+    <div class="row">
+      <div class="heading-box">
+        <span class="heading-box__span">/ CONTACT ME</span>
+        <h2 class="secondary-heading u-margin-bottom-large">
+          Let's get in touch and make something awesome.
+        </h2>
+        <a href="mailto:" class="contact-mail">lazar@snylabs.com</a>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-1-of-2">
+        <span class="heading-box__span">/ WHERE TO FIND ME</span>
+        <a href="#" class="heading-box__link">UpWork</a>
+        <a href="#" class="heading-box__link">LinkedIn</a>
+      </div>
+      <div class="col-1-of-2">
+        <span class="heading-box__span">/ FOLLOW SERENITY</span>
+        <ul class="footer__list">
+          <li class="footer__icon"><i class="fab fa-facebook"></i></li>
+          <li class="footer__icon"><i class="fab fa-twitter"></i></li>
+          <li class="footer__icon"><i class="fab fa-instagram"></i></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="footer__copyright">
+        <span>
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script> Lazar Lazarevic | Created by <a href="https://snylabs.com"
+            target="_blank" class="footer__link">Serenity Labs</a></span>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="top-scroll">
+      <a href="#header" class="scroll-btn top-scroll__link"><i class="fas fa-chevron-up"></i></a>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

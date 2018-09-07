@@ -1,0 +1,99 @@
+body {
+  font-family: "metropolis-medium", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+// -----------------
+// HEADINGS
+// -----------------
+
+.primary-heading {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  max-width: 80rem;
+
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+}
+
+.primary-heading-top {
+  font-family: "domine-bold", sans-serif;
+  font-size: 8.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+  display: inline-block;
+}
+
+.primary-heading-bottom {
+  font-family: "metropolis-light", sans-serif;
+  font-size: 3.8rem;
+  font-weight: 300;
+  padding-left: 10rem;
+  display: block;
+  position: relative;
+}
+
+.primary-heading-bottom::before {
+  content: "";
+  display: block;
+  width: 6.5rem;
+  height: 2px;
+  background-color: #ff6347;
+  position: absolute;
+  left: 6px;
+  top: 2.7rem;
+}
+
+.heading-box {
+  padding: 10rem;
+  max-width: 100rem;
+  text-align: left;
+
+  &__span {
+    font-size: 2.4rem;
+    color: #ff6347;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+
+  &__link {
+    color: $color-white;
+    font-weight: 100;
+    font-size: 2.6rem;
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.secondary-heading {
+  font-family: "domine-bold", sans-serif;
+  font-size: 6rem;
+}
+
+.contact-mail {
+  text-decoration: none;
+  font-family: "metropolis-light", sans-serif;
+  color: $color-white;
+  font-size: 6rem;
+  font-weight: 100;
+  position: relative;
+  padding: 2rem 0;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 80px;
+    background-color: #ff6347;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
