@@ -93,6 +93,7 @@
     transform: translateX(60rem);
     backface-visibility: hidden;
     box-shadow: -1rem 0rem 6rem $shadow-4;
+    z-index: 2000;
     @include easeOut;
 
     @include respond(tab-land) {
@@ -165,7 +166,7 @@
   position: absolute;
   right: 7rem;
   bottom: 5rem;
-  z-index: 1000;
+  z-index: 500;
   display: flex;
   align-items: center;
 
@@ -199,7 +200,7 @@
 .top-scroll {
   font-size: 2rem;
   position: absolute;
-  background-color: $color-white;
+  background-color: $color-grey;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   box-shadow: 0 0.5rem 2rem $shadow-2;
@@ -219,7 +220,7 @@
   }
 
   &__link {
-    color: $color-dark;
+    color: $color-white;
     animation: pulse 1s ease-in;
     animation-iteration-count: infinite;
   }

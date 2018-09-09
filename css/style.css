@@ -196,6 +196,17 @@ html {
     top: 0;
     left: 0; }
 
+.tertiary-heading {
+  font-size: 2.2rem;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-family: "metropolis-regular", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 100;
+  text-align: justify; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -213,6 +224,37 @@ html {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.composition {
+  margin-top: 50%;
+  position: relative;
+  padding: 3rem; }
+  .composition__photo {
+    width: 55%;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 10;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg); }
+    .composition__photo--p2 {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      right: 12rem;
+      top: 0; }
+    .composition__photo--p3 {
+      outline: 1.5rem solid #ff7730;
+      -webkit-transform: rotate(25deg);
+      transform: rotate(25deg);
+      right: 0;
+      top: -2rem; }
+    .composition__photo:hover {
+      -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 .menu-bg {
   position: fixed;
@@ -296,6 +338,7 @@ html {
     backface-visibility: hidden;
     -webkit-box-shadow: -1rem 0rem 6rem rgba(0, 0, 0, 0.4);
     box-shadow: -1rem 0rem 6rem rgba(0, 0, 0, 0.4);
+    z-index: 2000;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease; }
     @media (max-width: 1200px) {
@@ -347,7 +390,7 @@ html {
   position: absolute;
   right: 7rem;
   bottom: 5rem;
-  z-index: 1000;
+  z-index: 500;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,7 +422,7 @@ html {
 .top-scroll {
   font-size: 2rem;
   position: absolute;
-  background-color: #fff;
+  background-color: #29323c;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
@@ -401,7 +444,7 @@ html {
     padding: 0 2rem;
     text-transform: uppercase; }
   .top-scroll__link {
-    color: #141414;
+    color: #fff;
     -webkit-animation: pulse 1s ease-in;
     animation: pulse 1s ease-in;
     -webkit-animation-iteration-count: infinite;
@@ -495,10 +538,13 @@ html {
 
 .section-about {
   position: relative;
-  background-color: #7ed56f;
+  background-color: #29323c;
+  background-image: linear-gradient(60deg, #29323c, rgba(20, 20, 20, 0.8)), url(../img/about-bg.jpeg);
   height: 100vh; }
   .section-about:focus {
     outline: none; }
+  .section-about .about-text {
+    margin-top: 50%; }
 
 .section-services {
   position: relative;

@@ -1,0 +1,36 @@
+.composition {
+  margin-top: 50%;
+  position: relative;
+  padding: 3rem;
+
+  &__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem $shadow-2;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+
+    &--p1 {
+      transform: rotate(-5deg);
+    }
+
+    &--p2 {
+      //   border: 3px solid green;
+      transform: rotate(10deg);
+      right: 12rem;
+      top: 0;
+    }
+
+    &--p3 {
+      outline: 1.5rem solid $color-secondary-dark;
+      transform: rotate(25deg);
+      right: 0;
+      top: -2rem;
+    }
+
+    &:hover {
+      box-shadow: 0 2.5rem 4rem $shadow-4;
+    }
+  }
+}
