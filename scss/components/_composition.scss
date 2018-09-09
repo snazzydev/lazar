@@ -24,9 +24,10 @@
 
     &--p3 {
       outline: 1.5rem solid $color-secondary-dark;
-      transform: rotate(25deg);
-      right: 0;
-      top: -2rem;
+      transform: rotate(10deg);
+      margin: 0 auto;
+      left: 10rem;
+      // top: -2rem;
     }
 
     &:hover {
