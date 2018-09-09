@@ -454,6 +454,7 @@ html {
   position: relative;
   background-image: linear-gradient(60deg, #29323c, rgba(20, 20, 20, 0.8)), url(../img/hero.jpg);
   background-position: bottom;
+  background-size: cover;
   background-attachment: fixed;
   text-align: center;
   height: 100vh; }
@@ -540,6 +541,7 @@ html {
   position: relative;
   background-color: #29323c;
   background-image: linear-gradient(60deg, #29323c, rgba(20, 20, 20, 0.8)), url(../img/about-bg.jpeg);
+  background-size: cover;
   height: 100vh; }
   .section-about:focus {
     outline: none; }
@@ -549,6 +551,7 @@ html {
 .section-services {
   position: relative;
   background-color: #333a6b;
+  background-size: cover;
   height: 100vh; }
   .section-services:focus {
     outline: none; }
@@ -556,6 +559,7 @@ html {
 .section-work {
   position: relative;
   background-color: #667eea;
+  background-size: cover;
   height: 100vh; }
   .section-work:focus {
     outline: none; }
