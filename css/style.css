@@ -279,6 +279,7 @@ html {
 
 .gallery__img {
   border-radius: 3px;
+  padding: 0.5rem;
   height: 60%;
   width: 33%;
   -webkit-transition: all 0.7s;
