@@ -279,15 +279,22 @@ html {
 
 .gallery__img {
   border-radius: 3px;
-  padding: 1rem;
-  height: 40%;
+  height: 60%;
   width: 33%;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s; }
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%); }
   .gallery__img:hover {
     outline: 10px solid #ff7730;
-    -webkit-transform: scale(1.15) rotate(5deg);
-    transform: scale(1.15) rotate(5deg); }
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
+
+.gallery:hover .gallery__img:not(:hover) {
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7); }
 
 .menu-bg {
   position: fixed;
