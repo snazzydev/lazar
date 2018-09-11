@@ -69,6 +69,12 @@ html {
     font-size: 2.6rem;
     text-decoration: none;
     display: block;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-secondary-dark;
+      transform: rotate(5deg) scale(1.1);
+    }
   }
 }
 
@@ -85,6 +91,11 @@ html {
   font-weight: 100;
   position: relative;
   padding: 2rem 0;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-secondary-dark;
+  }
 
   &::before {
     content: "";

@@ -172,7 +172,13 @@ html {
     font-weight: 100;
     font-size: 2.6rem;
     text-decoration: none;
-    display: block; }
+    display: block;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+    .heading-box__link:hover {
+      color: #ff7730;
+      -webkit-transform: rotate(5deg) scale(1.1);
+      transform: rotate(5deg) scale(1.1); }
 
 .secondary-heading {
   font-family: "domine-bold", sans-serif;
@@ -185,7 +191,11 @@ html {
   font-size: 6rem;
   font-weight: 100;
   position: relative;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+  .contact-mail:hover {
+    color: #ff7730; }
   .contact-mail::before {
     content: "";
     display: block;
@@ -497,7 +507,12 @@ html {
       opacity: 0.7; }
   .footer__icon {
     font-size: 4rem;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer; }
+    .footer__icon:hover {
+      color: #ff7730; }
   .footer__link:link, .footer__link:visited {
     text-decoration: none;
     color: #fff;
@@ -521,6 +536,9 @@ html {
     list-style: none; }
   .footer__icon {
     display: inline-block; }
+    .footer__icon:hover {
+      -webkit-transform: rotate(5deg) scale(1.3);
+      transform: rotate(5deg) scale(1.3); }
   .footer__copyright {
     font-size: 2rem; }
 
