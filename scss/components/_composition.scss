@@ -13,11 +13,13 @@
 
     &--p1 {
       transform: rotate(-5deg);
+      filter: grayscale(85%);
     }
 
     &--p2 {
       // border: 3px solid green;
       transform: rotate(5deg);
+      filter: grayscale(30%);
       right: 14rem;
       top: 0;
     }
@@ -28,10 +30,6 @@
       margin: 0 auto;
       right: 5rem;
       // top: -2rem;
-    }
-
-    &:hover {
-      box-shadow: 0 2.5rem 4rem $shadow-4;
     }
   }
 }
