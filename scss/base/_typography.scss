@@ -29,6 +29,11 @@ html {
   font-weight: 400;
   line-height: 1.2;
   display: inline-block;
+
+  @include respond(phone) {
+    font-size: 6.8rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .primary-heading-bottom {
@@ -38,6 +43,11 @@ html {
   padding-left: 10rem;
   display: block;
   position: relative;
+
+  @include respond(phone) {
+    font-size: 3.2rem;
+    padding: 0;
+  }
 }
 
 .primary-heading-bottom::before {
@@ -49,6 +59,10 @@ html {
   position: absolute;
   left: 6px;
   top: 2.7rem;
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .heading-box {
@@ -68,7 +82,7 @@ html {
     font-weight: 100;
     font-size: 2.6rem;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     transition: all 0.2s;
 
     &:hover {
@@ -81,6 +95,10 @@ html {
 .secondary-heading {
   font-family: "domine-bold", sans-serif;
   font-size: 6rem;
+
+  @include respond(phone) {
+    font-size: 4rem;
+  }
 }
 
 .contact-mail {
@@ -92,6 +110,10 @@ html {
   position: relative;
   padding: 2rem 0;
   transition: all 0.2s;
+
+  @include respond(phone) {
+    font-size: 3.8rem;
+  }
 
   &:hover {
     color: $color-secondary-dark;

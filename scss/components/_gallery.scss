@@ -1,34 +1,40 @@
 .gallery {
-  // width: 100%;
+  // width: 70%;
   // height: 100%;
 
-  &__container {
-    @include centering;
-  }
+  // &__container {
+  //   @include centering;
+  // }
   &__link {
     text-decoration: none;
     outline: none;
   }
 
   &__img {
-    border-radius: 3px;
-    padding: 0.5rem;
     height: 60%;
     width: 33%;
-    transition: all 0.7s;
-    filter: grayscale(90%);
-    // opacity: 0.5;
+    transition: all 0.3s;
+    filter: grayscale(100%);
+
+    // @include respond(tab-port) {
+    //   width: 60rem;
+    //   padding: 0;
+    // }
+
+    @include respond(phone) {
+      padding: 0;
+    }
 
     &:hover {
-      outline: 10px solid $color-secondary-dark;
-      // border: 10px solid $color-secondary-dark;
-      transform: scale(1.1);
+      // outline: 10px solid $color-secondary-dark;
+      // border: 5px solid $color-secondary-dark;
+      // transform: scale(1.05);
       // transform: scale(1.07);
       filter: grayscale(0);
     }
   }
 
-  &:hover &__img:not(:hover) {
-    transform: scale(0.7);
-  }
+  // &:hover &__img:not(:hover) {
+  //   transform: scale(0.9);
+  // }
 }

@@ -20,6 +20,11 @@
   text-align: center;
   height: 100vh;
 
+  @include respond(phone) {
+    // margin-top: 8rem;
+    height: 120rem;
+  }
+
   &__heading {
     color: $color-white;
     font-size: 2.3rem;

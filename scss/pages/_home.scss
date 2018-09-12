@@ -19,8 +19,32 @@
 
   height: 100vh;
 
+  @include respond(tab-port) {
+    height: 80rem;
+  }
+
+  @include respond(phone) {
+    height: 100vh;
+  }
+
   .about-text {
     margin-top: 50%;
+
+    @include respond(tab-port) {
+      margin-top: 8rem;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      text-align: center;
+      margin-top: 8rem;
+    }
+  }
+}
+
+.about-image {
+  @include respond(phone) {
+    display: none;
   }
 }
 
@@ -54,7 +78,22 @@
     ),
     url(../img/about-bg.jpeg);
   background-size: cover;
-  height: 100vh;
+  height: 128vh;
+
+  @include respond(tab-land) {
+    // margin-top: 8rem;
+    height: 77rem;
+  }
+
+  @include respond(tab-port) {
+    // margin-top: 8rem;
+    height: 73rem;
+  }
+
+  @include respond(phone) {
+    // margin-top: 8rem;
+    height: 41rem;
+  }
 
   &__head {
     position: absolute;

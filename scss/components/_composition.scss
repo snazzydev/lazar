@@ -3,6 +3,19 @@
   position: relative;
   padding: 3rem;
 
+  @include respond(phone) {
+    margin-top: 0;
+    // display: none;
+  }
+
+  @include respond(tab-port) {
+    margin-top: 10rem;
+  }
+
+  @include respond(tab-land) {
+    margin-right: 10rem;
+  }
+
   &__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem $shadow-2;
@@ -11,9 +24,28 @@
     transition: all 0.2s;
     outline-offset: 2rem;
 
+    @include respond(tab-land) {
+      width: 45%;
+    }
+
+    @include respond(tab-port) {
+      width: 15%;
+    }
+
+    @include respond(phone) {
+      width: 45%;
+    }
     &--p1 {
       transform: rotate(-5deg);
       filter: grayscale(85%);
+
+      @include respond(tab-land) {
+        right: 40%;
+        top: 0;
+      }
+      @include respond(tab-port) {
+        display: none;
+      }
     }
 
     &--p2 {
@@ -22,6 +54,16 @@
       filter: grayscale(30%);
       right: 14rem;
       top: 0;
+
+      @include respond(tab-port) {
+        right: 40%;
+        top: -50%;
+      }
+
+      @include respond(phone) {
+        right: 30%;
+        top: 0;
+      }
     }
 
     &--p3 {
@@ -29,7 +71,21 @@
       transform: rotate(15deg);
       margin: 0 auto;
       right: 5rem;
-      // top: -2rem;
+
+      @include respond(tab-land) {
+        right: 20%;
+        top: 0;
+      }
+
+      @include respond(tab-port) {
+        right: 30%;
+        top: -50%;
+      }
+
+      @include respond(phone) {
+        right: 20%;
+        top: -20%;
+      }
     }
   }
 }

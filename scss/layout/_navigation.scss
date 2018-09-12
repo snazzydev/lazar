@@ -33,6 +33,11 @@
     background-color: $color-white;
     @include easeOut;
 
+    @include respond(phone) {
+      width: 4rem;
+      height: 3px;
+    }
+
     &:not(:last-child) {
       margin-bottom: 5px;
     }
@@ -72,6 +77,11 @@
   z-index: 800;
   visibility: hidden;
 
+  @include respond(phone) {
+    top: 0;
+    right: 0;
+  }
+
   &.show {
     visibility: visible;
   }
@@ -97,15 +107,16 @@
     @include easeOut;
 
     @include respond(tab-land) {
-      width: 50%;
+      width: 250px;
     }
 
     @include respond(tab-port) {
-      width: 50%;
+      width: 250px;
     }
 
     @include respond(phone) {
-      width: 40%;
+      height: 100vh;
+      width: 250px;
     }
 
     &.show {
@@ -145,7 +156,7 @@
     @include easeOut;
 
     @include respond(phone) {
-      font-size: 2.3rem;
+      font-size: 3.4rem;
     }
 
     &:hover {
